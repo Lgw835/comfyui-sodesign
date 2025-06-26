@@ -1,0 +1,80 @@
+# ComfyUI-sodesign .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.so
+.pytest_cache/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+/.vs
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# ComfyUI specific - Models (large files)
+/models/
+!/models/.gitkeep
+
+# ComfyUI specific - Generated content
+/output/
+!/output/.gitkeep
+/temp/
+!/temp/.gitkeep
+
+# ComfyUI specific - User data
+/user/
+!/user/.gitkeep
+
+# ComfyUI specific - Input files (except examples)
+/input/
+!/input/example.png
+!/input/.gitkeep
+
+# ComfyUI specific - Custom nodes (third-party)
+/custom_nodes/
+!/custom_nodes/example_node.py.example
+!/custom_nodes/.gitkeep
+
+# ComfyUI specific - Web extensions
+/web/extensions/*
+!/web/extensions/logging.js.example
+!/web/extensions/core/
+!/web/extensions/.gitkeep
+
+# ComfyUI specific - Configuration
+extra_model_paths.yaml
+/tests-ui/data/object_info.json
+web_custom_versions/
+
+# Logs
+*.log
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Large files and binaries
+*.ckpt
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.trt
+*.engine
